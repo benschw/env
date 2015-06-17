@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 
   config.vm.define "node1" do |node1|
-    kube.vm.provision :shell, :path => "./bootstrap.sh"
+    node1.vm.provision :shell, :path => "./bootstrap.sh"
     node1.vm.hostname = "node1"
     node1.vm.network "private_network", ip: "172.20.20.10"
   end
