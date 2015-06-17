@@ -1,24 +1,11 @@
 ### Install
-#### env
 
-	sudo aptitude install git tmux vim htop jq tree make
+#### vagrant / virtualbox
 
-	wget -qO- https://get.docker.com/ | sh
-	sudo usermod -aG docker ben
-	sudo service docker restart
-	newgrp docker
-
-	sudo aptitude install php5-cli php5-curl
-	curl -sS https://getcomposer.org/installer | php
-	sudo mv composer.phar /usr/local/bin/composer
-
-	# tmux
-	ln -s ~/.vim/tmux.conf ~/.tmux.conf
-
-	# git
-	git config --global user.email "benschw@gmail.com"
-	git config --global user.name "Ben Schwartz"
-	git config --global push.default simple
+	sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' > /etc/apt/sources.list.d/virtualbox.list" 
+	wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - 
+	sudo aptitude update 
+	sudo aptitude install -y virtualbox-4.3 dkms
 
 #### vim
 
