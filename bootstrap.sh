@@ -7,7 +7,12 @@ useradd $USER -m -s /bin/bash
 
 
 aptitude update
-aptitude install -y curl wget git tmux vim htop jq tree make php5-cli php5-curl
+aptitude install -y \
+	curl wget git htop jq tree \
+	tmux vim exuberant-ctags \
+	php5-cli php5-curl \
+	ant make
+
 
 
 # docker
@@ -24,14 +29,13 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
 
+# Setting up User Environment
 echo SUing to $USER
 su $USER
 
 
 # git
-git config --global user.email "benschw@gmail.com"
-git config --global user.name "Ben Schwartz"
-git config --global push.default simple
+ln -s /home/$USER/.vim/gitconfig /home/$USER/.gitconfig
 
 
 # vim
@@ -41,6 +45,16 @@ git submodule init
 git submodule update
 ln -s /home/$USER/.vim/vimrc /home/$USER/
 
+# swp tmp
+mkdir /home/$USER/tmp
+
+# ctags config
+ln -s /home/$USER/.vim/ctags /homt/$USER/.ctags
+
+# fonts
+git clone https://github.com/powerline/fonts.git /tmp/fonts
+/tmp/fonts/install.sh
+rm -rf /tmp/fonts
 
 # tmux
 ln -s /home/$USER/.vim/tmux.conf /home/$USER/.tmux.conf
