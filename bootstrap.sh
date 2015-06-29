@@ -8,7 +8,7 @@ useradd $USER -m -s /bin/bash
 
 aptitude update
 aptitude install -y \
-	curl wget git htop jq tree \
+	curl wget git htop jq tree unzip \
 	tmux vim exuberant-ctags \
 	php5-cli php5-curl \
 	ant make
