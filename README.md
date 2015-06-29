@@ -12,24 +12,3 @@ mv ~/ssh ~/.ssh
 	sudo aptitude update 
 	sudo aptitude install -y virtualbox-4.3 dkms
 
-### Key Bindings
-#### General
-
-
-	\q                - quick notes
-	
-	\\                - toggle NerdTree file browser
-	\<ENTER>          - disable highlighting
-	\r                - toggle relative / absolute line numbers
-
-	\f                - CtrlP
-	\.                - CtrlPTag
-	\w                - buffer explorer
-	\]                - next buffer
-	\[                - previous buffer
-
-#### Go
-	
-	\b                - go-build
-	\t                - go-test
-	
