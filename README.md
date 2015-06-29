@@ -1,7 +1,7 @@
 ### Install
 #### ssh keys
 
-curl https://github.com/benschw/env/raw/master/ssh.tar.gz.gpg | gpg | tar xzvf -C ~/
+wget -qO- https://github.com/benschw/env/raw/master/ssh.tar.gz.gpg | gpg | tar xz -C ~/
 mv ~/ssh ~/.ssh
 
 
