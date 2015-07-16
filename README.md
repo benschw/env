@@ -12,3 +12,7 @@ mv ~/ssh ~/.ssh
 	sudo aptitude update 
 	sudo aptitude install -y virtualbox-4.3 dkms
 
+
+#### desktop
+
+http://www.fandigital.com/p/zoncolor.html
