@@ -16,3 +16,12 @@ mv ~/ssh ~/.ssh
 #### desktop
 
 http://www.fandigital.com/p/zoncolor.html
+
+    sudo add-apt-repository ppa:noobslab/themes
+    sudo apt-get update
+    sudo apt-get install azure-gtk-theme
+    
+    sudo add-apt-repository ppa:snwh/pulp
+    sudo apt-get update
+    sudo apt-get install paper-icon-theme paper-gtk-theme
+    
