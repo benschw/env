@@ -1,8 +1,8 @@
 ### Install
 #### ssh keys
 
-wget -qO- https://github.com/benschw/env/raw/master/ssh.tar.gz.gpg | gpg | tar xz -C ~/
-mv ~/ssh ~/.ssh
+    wget -qO- https://github.com/benschw/env/raw/master/ssh.tar.gz.gpg | gpg | tar xz -C ~/
+    mv ~/ssh ~/.ssh
 
 
 #### vagrant / virtualbox
